@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ImageWithFallback } from '../components/ImageWithFallback.tsx';
@@ -13,10 +12,6 @@ export const About: React.FC = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            /* 
-               Using aspect-[3/4] consistently ensures the portrait framing remains stable.
-               max-w-[480px] on laptop prevents the image from becoming too tall and zooming in on the face.
-            */
             className="relative aspect-[3/4] w-full max-w-[400px] lg:max-w-[480px] mx-auto rounded-[2.5rem] md:rounded-[4rem] overflow-hidden bg-slate-900 border border-white/5 shadow-2xl group flex items-center justify-center"
           >
             <div className="w-full h-full relative z-10 flex items-center justify-center overflow-hidden">
@@ -24,10 +19,6 @@ export const About: React.FC = () => {
                 src={profileImg} 
                 alt="Ei Thinzar Myo" 
                 category="Profile"
-                /* 
-                   object-top ensures the head is never cut off.
-                   The transition-transform adds a subtle luxury feel on hover.
-                */
                 className="w-full h-full object-cover object-top transition-transform duration-1000 ease-out group-hover:scale-105" 
               />
             </div>
@@ -44,47 +35,47 @@ export const About: React.FC = () => {
           >
             <div className="text-center mb-10 md:mb-16 flex flex-col items-center">
               <div className="inline-block px-4 py-1.5 md:px-5 md:py-2 bg-indigo-500/10 border border-indigo-500/20 rounded-full mb-6 md:mb-10">
-                <span className="text-indigo-400 font-black uppercase text-[9px] md:text-[10px] tracking-[0.4em]">Junior UI/UX & Frontend</span>
+                <span className="text-indigo-400 font-black uppercase text-[9px] md:text-[10px] tracking-[0.4em]">Junior Data Analyst</span>
               </div>
-              <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter leading-none uppercase text-shadow">About ME</h2>
+              <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter leading-none uppercase text-shadow">About Me</h2>
               <div className="w-16 md:w-24 h-1.5 md:h-2 bg-indigo-500 rounded-full mt-4 md:mt-6"></div>
             </div>
 
             <div className="space-y-6 md:space-y-8 text-slate-400 text-lg md:text-xl leading-relaxed text-left">
               <p>
-                I’m a <span className="text-white font-semibold italic">Junior UI/UX Designer and Frontend Developer</span> with a Computer Science background, specialising in Big Data. I enjoy designing intuitive, user-centered interfaces while keeping system logic and technical feasibility in mind.
+                I’m a <span className="text-white font-semibold italic">Junior Data Analyst</span> with a Computer Science background, specialising in Big Data. I enjoy exploring datasets, performing statistical and predictive analyses, and transforming raw data into actionable insights for decision-making.
               </p>
               <p>
-                My design process is <span className="text-white/90">structured and practical</span> — starting with understanding users through research, user stories, and use cases, then moving through wireframes, system diagrams, and high-fidelity prototypes ready for development. This approach helps me collaborate effectively with developers and create designs that are both clear to use and realistic to build.
+                My analytical approach is <span className="text-white/90">structured and data-driven</span> — starting with data cleaning and exploratory analysis, followed by feature engineering, modeling, and visualization. I strive to communicate insights clearly to support informed business decisions.
               </p>
               <p>
-                As someone at the start of my professional journey, I bring strong foundational skills, a thoughtful design mindset, and a genuine eagerness to learn. I’m looking to grow within a <span className="text-indigo-400">collaborative team</span> where I can contribute meaningfully while continuing to improve as a designer and developer.
+                As someone at the start of my professional journey, I bring strong technical skills, a methodical mindset, and a genuine eagerness to learn. I’m looking to grow within a <span className="text-indigo-400">collaborative, data-focused team</span> where I can contribute meaningful insights and continuously improve my analytical abilities.
               </p>
             </div>
 
             <div className="mt-12 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 pt-12 md:pt-16 border-t border-white/10">
               <div className="flex flex-col">
-                <div className="text-2xl md:text-3xl font-black text-white tracking-tighter">User</div>
+                <div className="text-2xl md:text-3xl font-black text-white tracking-tighter">Data</div>
                 <div className="text-[7px] md:text-[8px] font-black text-slate-500 uppercase tracking-[0.4em] mt-3 md:mt-4 leading-relaxed">
-                  Centered<br/>Design
+                  Cleaning<br/>Analysis
                 </div>
               </div>
               <div className="flex flex-col">
-                <div className="text-2xl md:text-3xl font-black text-white tracking-tighter">System</div>
+                <div className="text-2xl md:text-3xl font-black text-white tracking-tighter">Insights</div>
                 <div className="text-[7px] md:text-[8px] font-black text-slate-500 uppercase tracking-[0.4em] mt-3 md:mt-4 leading-relaxed">
-                  Thinking<br/>Logic
+                  Dashboards<br/>Visuals
                 </div>
               </div>
               <div className="flex flex-col">
-                <div className="text-2xl md:text-3xl font-black text-white tracking-tighter">UI/UX</div>
+                <div className="text-2xl md:text-3xl font-black text-white tracking-tighter">Models</div>
                 <div className="text-[7px] md:text-[8px] font-black text-slate-500 uppercase tracking-[0.4em] mt-3 md:mt-4 leading-relaxed">
-                  & Frontend<br/>Dev
+                  Regression<br/>Prediction
                 </div>
               </div>
               <div className="flex flex-col">
-                <div className="text-2xl md:text-3xl font-black text-white tracking-tighter">Agile</div>
+                <div className="text-2xl md:text-3xl font-black text-white tracking-tighter">Collaboration</div>
                 <div className="text-[7px] md:text-[8px] font-black text-slate-500 uppercase tracking-[0.4em] mt-3 md:mt-4 leading-relaxed">
-                  Sprint<br/>Collab
+                  Agile<br/>Teamwork
                 </div>
               </div>
             </div>

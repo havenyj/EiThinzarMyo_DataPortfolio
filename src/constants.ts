@@ -24,12 +24,12 @@ export const RESUME_DATA = {
   phone: "+65 88938384",
   linkedin: "linkedin.com/in/eithinzarmyo",
   portfolio: "eithinzarmyo.com",
-  summary: "Junior UI/UX Designer and Frontend Developer with a background in Computer Science and Big Data. Passionate about creating structured, user-centered digital experiences that bridge the gap between complex data and intuitive design.",
+  summary: "Aspiring Data Analyst with a Computer Science and Big Data background. Skilled in data analysis, visualization, and machine learning, with a strong ability to turn complex datasets into clear, actionable insights for business decision-making.",
   education: [
     {
       degree: "Bachelor of Computer Science (Big Data)",
       school: "University of Wollongong (SIM Global Education)",
-      period: "2022 - 2025",
+      period: "2022 - 2026",
       details: "Specialized in data analysis, visualization, and system design."
     }
   ],
@@ -44,52 +44,54 @@ export const RESUME_DATA = {
 
 export const PROJECTS: Project[] = [
   {
-    id: 'rockland',
-    title: 'Rockland — Mobile Rock Discovery',
+    id: 'data-analytics-app',
+    title: 'Data-Driven Web & Mobile Analytics Application',
     role: 'Lead UI/UX Designer · System Designer · Frontend Developer',
-    duration: 'Oct 2025 - Present',
+    duration: 'Oct 2025 - March 2026',
     category: 'Mobile',
     image: rocklandImg,
-    description: 'A mobile application designed to help users explore, identify, and learn about rocks through a structured and user-friendly experience.',
-    tools: ['Figma', 'Android Studio', 'Java', 'Firebase', 'Jira'],
+    description: 'A mobile application designed to help users explore, identify, and learn about rocks through a structured and user-friendly experience, supported by a system for organizing and managing rock information.',
+    tools: ['Firebase', 'JavaScript', 'System Design', 'UML'],
     details: [
-      'Designed wireframes and high-fidelity UI screens in Figma',
-      'Created role-based user flows and dashboards',
-      'Implemented the Android frontend using Android Studio',
-      'Collaborated with the team using Agile workflows and Jira'
+      'Designed system architecture and workflows using UML diagrams including use case, sequence, and activity diagrams',
+      'Created the application interface and structured user flows for different system roles',
+      'Developed an admin website using Firebase for managing platform data and user activities',
+      'Implemented data management features allowing administrators to monitor and update application records',
+      'Collaborated with team members using Agile methodology to deliver system features iteratively'
     ]
   },
   {
     id: 'cleaning-service',
-    title: 'Online Cleaning Service Platform',
-    role: 'Group Leader · UI/UX Designer · Frontend Developer',
+    title: 'Online Cleaning Service Analytics Platform',
+    role: 'Group Leader · Data Analyst · Product Analyst',
     duration: 'March 2025 - May 2025',
     category: 'Web',
     image: cleaningServiceImg,
     description: 'A multi-role platform that allows homeowners to book cleaning services while enabling cleaners and platform managers to manage jobs efficiently.',
-    tools: ['Figma', 'HTML', 'CSS', 'JavaScript', 'UML'],
+    tools: ['UML', 'Agile', 'System Analysis'],
     details: [
-      'Defined user roles and user journeys',
-      'Designed wireframes and UI screens in Figma',
-      'Created use cases and system workflows',
-      'Developed frontend interfaces for different roles',
-      'Coordinated team tasks and supported Agile collaboration'
+      'Led a team of four to design a multi-role service analytics platform',
+      'Defined workflows and system requirements supporting data-driven decision features',
+      'Designed data flows and system architecture using UML diagrams',
+      'Analyzed platform usage data requirements for operational insights',
+      'Collaborated with developers using Agile methodology for iterative delivery'
     ]
   },
   {
     id: 'house-price',
     title: 'House Price Prediction Dashboard',
-    role: 'Lead UI/UX Designer · System Designer · Frontend Developer',
+    role: 'Data Analyst · Machine Learning Developer',
     duration: 'Oct 2024 - Dec 2024',
     category: 'Dashboard',
     image: housePriceImg,
-    description: 'An interactive dashboard designed to present house price prediction results in a clear and accessible way for non-technical users.',
-    tools: ['Python', 'Pandas', 'Matplotlib', 'Seaborn'],
+    description: 'Analyzed housing market data using Python to identify key factors influencing house prices. Performed data cleaning, exploratory data analysis (EDA), and built regression models to generate insights.',
+    tools: ['Python', 'Pandas', 'Numpy', 'Scikit-learn'],
     details: [
-      'Designed dashboard layout and visual hierarchy',
-      'Selected appropriate charts for readability',
-      'Implemented data visualizations using Python',
-      'Transformed complex ML results into understandable visual insights'
+      'Performed data cleaning and preprocessing on the Ames Housing dataset',
+      'Conducted exploratory data analysis (EDA) to identify key price drivers',
+      'Built regression models including Linear Regression and Random Forest',
+      'Evaluated model performance using RMSE and R² metrics',
+      'Visualized housing price trends and correlations using Python libraries'
     ]
   }
 ];
@@ -144,24 +146,37 @@ export const OTHER_PROJECTS: Project[] = [
 
 export const SKILLS: SkillCategory[] = [
   {
-    title: 'UI/UX Design',
-    icon: 'fa-bezier-curve',
-    skills: ['Figma', 'Wireframing', 'High-Fidelity UI', 'Prototyping', 'Information Architecture', 'User Stories']
+    title: 'Data & Analytics',
+    icon: 'fa-chart-line',
+    skills: [
+      'Python', 'Pandas', 'NumPy', 'SQL', 
+      'Data Cleaning', 'EDA', 'Data Visualization', 'Interactive Dashboards'
+    ]
   },
   {
-    title: 'Frontend Development',
-    icon: 'fa-code',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React (Basic)', 'Android Studio']
-  },
-  {
-    title: 'System & Process',
-    icon: 'fa-diagram-project',
-    skills: ['UML Diagrams', 'Agile / Scrum', 'Technical Documentation']
-  },
-  {
-    title: 'Data & Visualization',
+    title: 'Business Intelligence & Tools',
     icon: 'fa-chart-pie',
-    skills: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'MySQL']
+    skills: [
+      'Excel', 'Power BI (Basic)', 'Tableau (Basic)', 
+      'Git/GitHub', 'Jira', 'Taiga', 'VS Code', 'Jupyter Notebooks'
+    ]
+  },
+  {
+    title: 'Programming & Machine Learning',
+    icon: 'fa-code',
+    skills: [
+      'Java', 'Python', 'MySQL', 
+      'Regression Models', 'Random Forest', 'Gradient Boosting', 'Model Evaluation'
+    ]
+  },
+  {
+    title: 'System Analysis',
+    icon: 'fa-diagram-project',
+    skills: [
+      'UML Diagrams (Class, Sequence, Activity, State)', 
+      'Agile/Scrum', 'Technical Documentation',
+      'Analytical Thinking', 'Data Storytelling'
+    ]
   }
 ];
 

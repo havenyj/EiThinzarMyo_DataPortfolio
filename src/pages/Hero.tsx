@@ -36,8 +36,8 @@ export const Hero: React.FC = () => {
         </div>
         
         <p className="text-lg md:text-2xl lg:text-3xl text-slate-400 font-medium max-w-3xl mx-auto leading-relaxed mb-12 md:mb-16 px-4">
-          A <span className="text-white font-bold italic">visionary</span> Junior UI/UX Designer & Frontend Developer building high-performance, system-driven interfaces.
-        </p>
+        A <span className="text-white font-bold italic">driven</span> Junior Data Analyst transforming complex datasets into actionable insights and data-driven solutions.
+          </p>
         
         <div className="flex flex-col items-center gap-6 md:gap-8">
           <ResumeButton />

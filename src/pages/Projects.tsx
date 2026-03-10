@@ -16,7 +16,7 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject, showAll, on
     <section id="projects" className="py-24 md:py-40 px-6 bg-slate-900/10">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 md:mb-24 text-center flex flex-col items-center">
-          <h2 className="text-4xl sm:text-5xl md:text-8xl font-black text-white mb-4 md:mb-6 tracking-tighter">Selected Works</h2>
+          <h2 className="text-4xl sm:text-5xl md:text-8xl font-black text-white mb-4 md:mb-6 tracking-tighter">Data Projects</h2>
           <div className="w-16 md:w-24 h-1.5 md:h-2 bg-indigo-500 rounded-full"></div>
         </div>
 
