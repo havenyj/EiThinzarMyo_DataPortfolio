@@ -24,19 +24,27 @@ export const Hero: React.FC = () => {
         >
           <span className="text-indigo-400 font-black uppercase text-[8px] md:text-[9px] tracking-[0.4em]">Available for Opportunities</span>
         </motion.div>
+
+        <p className="text-slate-500 text-[9px] md:text-[10px] uppercase tracking-[0.2em] font-medium mb-8 md:mb-10">
+        Based in Myanmar · Relocating to Taipei · Authorized to work in Taiwan
+        </p>
         
-        <div className="mb-8 md:mb-12 flex justify-center w-full">
+        <div className="mb-8 md:mb-12 flex flex-col items-center justify-center">
           <GradientText 
-            className="text-[8.5vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-[9.5rem] font-black tracking-tighter leading-none whitespace-nowrap py-2"
+            className="text-[18vw] sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tight leading-none whitespace-nowrap py-2"
             colors={['#6366f1', '#a855f7', '#ffffff', '#fb7185', '#6366f1']}
             animationSpeed={6}
           >
-            EI THINZAR MYO
+            林月君
           </GradientText>
+
+          <p className="mt-3 md:mt-4 text-sm md:text-base text-slate-500 font-medium tracking-[0.25em] uppercase">
+            EI THINZAR MYO
+          </p>
         </div>
         
         <p className="text-lg md:text-2xl lg:text-3xl text-slate-400 font-medium max-w-3xl mx-auto leading-relaxed mb-12 md:mb-16 px-4">
-        A <span className="text-white font-bold italic">driven</span> Junior Data Analyst transforming complex datasets into actionable insights and data-driven solutions.
+        A Junior Data Analyst transforming complex <span className="text-white font-bold italic">data</span> into actionable insights and data-driven solutions.
           </p>
         
         <div className="flex flex-col items-center gap-6 md:gap-8">
